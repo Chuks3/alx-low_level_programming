@@ -2,6 +2,7 @@
 
 /**
  * _islower - check the code.
+ * @c: Is an interger.
  * Return: Always 0.
  */
 

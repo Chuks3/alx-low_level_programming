@@ -13,8 +13,9 @@ int o;
 if (c > 0)
 {
 c = -c;
+}
 o = c % 10;
 _putchar(o + '0');
 return (o);
-}
+
 }

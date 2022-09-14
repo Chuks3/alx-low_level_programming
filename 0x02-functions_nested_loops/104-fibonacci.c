@@ -10,8 +10,8 @@ int main(void)
 	int counter = 2;
 
 	float x = 1;
-	float y = a + 1;
-	float z = a + b;
+	float y = x + 1;
+	float z = x + y;
 
 	printf("%.0f, ", x);
 	printf("%.0f, ", y);

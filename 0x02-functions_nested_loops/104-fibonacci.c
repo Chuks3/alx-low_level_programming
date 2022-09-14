@@ -1,27 +1,26 @@
 #include <stdio.h>
-
 /**
- * main - Entry point.
- * Return: Always 0.
+ * main - main function
+ *
+ * Return: nothing
  */
-
 int main(void)
 {
 	int counter = 2;
 
-	float x = 1;
-	float y = x + 1;
-	float z = x + y;
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
 
-	printf("%.0f, ", x);
-	printf("%.0f, ", y);
+	printf("%.0f, ", a);
+	printf("%.0f, ", b);
 	while (counter < 98)
 	{
 		counter++;
-		printf("%.0f", z);
-		x = y;
-		y = z;
-		z = x + y;
+		printf("%.0f", c);
+		a = b;
+		b = c;
+		c = a + b;
 		if (counter < 98)
 		{
 			printf(", ");

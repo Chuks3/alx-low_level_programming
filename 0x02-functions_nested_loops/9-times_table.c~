@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ *
+ *
+ */
+
+void times_table(void)
+{
+  int i;
+
+  for (i = 0; i <= 12; i++)
+    _putchar

@@ -1,6 +1,5 @@
 #include "main.h"
 
-/* main - */
 /* _isupper - Checks for uppercase. */
 /* Return: Always 0. */
 

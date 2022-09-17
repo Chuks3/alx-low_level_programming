@@ -14,9 +14,9 @@ for (a = 0; a < 10; a++)
 {
 for (b = 0; b < a; b++)
 {
-putchar(' ');
+_putchar(' ');
 }
-putchar(92);
-putchar('\n');
+_putchar(92);
+_putchar('\n');
 }
 }

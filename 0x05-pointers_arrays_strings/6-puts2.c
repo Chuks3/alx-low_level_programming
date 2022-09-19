@@ -1,5 +1,6 @@
-#include "holberton.h"
+#include "main.h"
 #include "2-strlen.c"
+
 /**
  * puts2 - Puts string twice.
  * @str: String to print twice.

@@ -1,10 +1,10 @@
 #include <stdio.h>
+
 /**
  * main - entry point.
- *
  * Return:0
- *
  */
+
 int main(void)
 {
 	unsigned char a = '0';

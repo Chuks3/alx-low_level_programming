@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * _strncat - 
- * @dest:
- * @src:
+ * _strcat - appends two strings.
+ * @dest: First string.
+ * @src: second string.
+ * Return: returns string dest.
  **/
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	_strncat(dest, src);
+	_strcat(dest, src);
 	return (dest);
 }

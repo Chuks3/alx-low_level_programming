@@ -1,9 +1,10 @@
  #include "main.h"
 
 /**
- * is_prime_number - checks if the input integer is a prime number
- * @n: integer
- * Return: an int
+ * helper - does it for me
+ * @i: helper int
+ * @n: integer I'm testing
+ * Return: value
  **/
 
 int helper(int i, int n)
@@ -16,9 +17,9 @@ int helper(int i, int n)
 }
 
 /**
- * is_prime_number - is prime or not
- * @n: integer to compare
- * Return: boolean
+ * is_prime_number - checks if the input integer is a prime number
+ * @n: integer
+ * Return: an int
  **/
 
 int is_prime_number(int n)
@@ -28,4 +29,4 @@ int is_prime_number(int n)
 	if (n < 2)
 		return (0);
 	return (helper(i, n));
-  }
+}

@@ -21,6 +21,6 @@ char *create_array(unsigned int size, char c)
 
 	else
 		for (a = 0; a < size; a++)
-			ptr[a] = c[a];
+			ptr[a] = c;
 	return (ptr);
 }

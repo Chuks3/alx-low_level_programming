@@ -63,5 +63,5 @@ char **strtow(char *str)
 	}
 	aout[i] = NULL;
 	return (aout);
-	return(aout);
+	free(aout);
 }

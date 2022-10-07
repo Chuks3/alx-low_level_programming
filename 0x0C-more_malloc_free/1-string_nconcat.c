@@ -6,13 +6,13 @@
  * @s1: first string
  * @s2: second string
  * @n: length of second string
- * Return: null else void
+ * Return: null else a pointer
  **/
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j;
-	char *a = malloc(*s1 + n + 1);
+	char *concat;
+	unsigned int len = n, index;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -20,16 +20,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; s1[i]; i++)
-		a[j++] = s1[i];
+	for (index = 0; s1[index]; index++)
+		len++;
 
-	for (j = 0; j <= n; j++)
-		a[j++] = s2[i];
+	concat = malloc(sizeof(char) * (len + 1));
 
-	if (a == NULL)
+	if (concat == NULL)
 		return (NULL);
 
-	a[j++] = '\0';
-	return (a);
-	free(a);
+	len = 0;
+
+	for (index = 0; s1[index]; index++)
+		concat[len++] = s1[index];
+
+	for (index = 0; s2[index] && index < n; index++)
+		concat[len++] = s2[index];
+
+	concat[len] = '\0';
+
+	return (concat);
+	free(concat);
 }

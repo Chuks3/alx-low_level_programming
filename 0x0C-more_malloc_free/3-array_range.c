@@ -11,7 +11,7 @@
 int *array_range(int min, int max)
 {
 	int i = 0;
-	int *num = malloc(sizeof(int) *2);
+	int *num = malloc(sizeof(int) * 2);
 
 	num[i++] = min;
 	num[i] = max;

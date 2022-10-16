@@ -1,4 +1,4 @@
-fndef _FUNCTION_FILE_H_
+#ifndef _FUNCTION_FILE_H_
 
 #define _FUNCTION_FILE_H_
 
